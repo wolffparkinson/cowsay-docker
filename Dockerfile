@@ -4,8 +4,8 @@ RUN apt-get update -y
 RUN apt-get install -y fortune
 RUN apt-get install -y cowsay
 
-WORKDIR /usr/games
-CMD  ./fortune | ./cowsay
+ENV PATH="${PATH}:/usr/games"
+CMD  fortune | cowsay
 
 ########### COMMANDS #############
 
