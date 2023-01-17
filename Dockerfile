@@ -5,7 +5,7 @@ RUN apt-get install -y fortune
 RUN apt-get install -y cowsay
 
 ENV PATH="${PATH}:/usr/games"
-CMD  fortune | cowsay
+CMD fortune | cowsay
 
 ########### COMMANDS #############
 
