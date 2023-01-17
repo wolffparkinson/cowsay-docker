@@ -1,7 +1,8 @@
 FROM debian:9.5-slim
 
 RUN apt-get update -y
-RUN apt-get install -y cowsay fortune
+RUN apt-get install -y fortune
+RUN apt-get install -y cowsay
 
 WORKDIR /usr/games
 CMD  ./fortune | ./cowsay
